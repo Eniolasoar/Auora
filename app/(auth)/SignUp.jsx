@@ -7,6 +7,7 @@ import FormField from '../../components/FormField';
 import CustomButton from '../../components/CustomButton';
 import { Link, router } from 'expo-router';
 import { createUser } from '../../lib/appwrite';
+import "react-native-reanimated";
 const SignUp = () => {
   const [form, setForm] = useState({
     userName:"",
@@ -18,7 +19,7 @@ const SignUp = () => {
   
   const submit=async ()=>{
     if(!form.userName||!form.email||!form.password){
-      Alert.alert("Error","Please fill in all the fields")
+      Alert.alert("Error","Please fill in all the fields");
     }
     setIsSubmitting(true);
     try {
@@ -30,8 +31,9 @@ const SignUp = () => {
     }
     finally{
       setIsSubmitting(false)
-    }
-    createUser();
+}
+
+   
   }
   return (
     <SafeAreaView className="bg-primary h-full ">
@@ -65,7 +67,7 @@ const SignUp = () => {
           <Text className="text-lg text-gray-100 font-pregular">
             Already have an account?
           </Text>
-          <Link href="/SignIn" className='text-lg font-psemibold text-secondary'>Sign In</Link>
+          <Link push href="/SignIn" className='text-lg font-psemibold text-secondary'>Sign In</Link>
          </View>
       </View>
      </ScrollView>

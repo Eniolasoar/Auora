@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import {useEffect,React} from 'react'
 import {Slot,Stack,SplashScreen} from "expo-router";
 import {useFonts} from "expo-font";
+import "react-native-reanimated";
 SplashScreen.preventAutoHideAsync;
 const RootLayout = () => {
     const [fontsLoaded, error] = useFonts({

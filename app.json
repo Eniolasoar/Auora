@@ -17,17 +17,19 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "package":"com.enidev.aoura"
+      "package": "com.enidev.aoura"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package":"com.enidev.aoura"
+      "package": "com.enidev.aoura"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
-  }
+    },
+    "sdkVersion": "51.0.0"
+  },
+  "name": "auora"
 }
