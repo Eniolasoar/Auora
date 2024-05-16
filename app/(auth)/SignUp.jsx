@@ -8,6 +8,7 @@ import CustomButton from '../../components/CustomButton';
 import { Link, router } from 'expo-router';
 import { createUser } from '../../lib/appwrite';
 import "react-native-reanimated";
+import { useGlobalContext } from '../../context/GlobalProvider';
 const SignUp = () => {
   const [form, setForm] = useState({
     userName:"",
@@ -16,6 +17,8 @@ const SignUp = () => {
   });
 
   const [isSubmitting,setIsSubmitting]=useState(false);
+
+  const {setUser,setIsLoggedin}=useGlobalContext();
   
   const submit=async ()=>{
     if(!form.userName||!form.email||!form.password){
@@ -24,7 +27,8 @@ const SignUp = () => {
     setIsSubmitting(true);
     try {
       const result=await createUser(form.email,form.password,form.userName);
-
+      setUser(result);
+      setIsLoggedin(true);
       router.replace("/Home")
     } catch (error) {
       Alert.alert("Error",error.message);

@@ -3,6 +3,7 @@ import {useEffect,React} from 'react'
 import {Slot,Stack,SplashScreen} from "expo-router";
 import {useFonts} from "expo-font";
 import "react-native-reanimated";
+import GlobalProvider from '../context/GlobalProvider';
 SplashScreen.preventAutoHideAsync;
 const RootLayout = () => {
     const [fontsLoaded, error] = useFonts({
@@ -30,6 +31,10 @@ const RootLayout = () => {
     // <Slot/>
     // <Text>Footer</Text>
     // </>
+
+    <GlobalProvider>
+
+      
     <Stack>
         <Stack.Screen name='index' options={{headerShown:false}}/>
         <Stack.Screen name='(auth)' options={{headerShown:false}}/>
@@ -38,6 +43,7 @@ const RootLayout = () => {
         
        
     </Stack>
+    </GlobalProvider>
    )
  
 }
