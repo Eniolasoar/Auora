@@ -48,6 +48,8 @@ const Home = () => {
     setRefreshing(false)
   }
 
+const latestPosts=[...data].sort((a,b)=>a.updateOrder - b.updateOrder);
+console.log(latestPosts);
   return (
     <SafeAreaView className="bg-primary h-full">
       <FlatList
@@ -76,13 +78,13 @@ const Home = () => {
 
             <SearchInput placeholder="Search for a video topic"/>
 
-            {/* <View className="w-full flex-1 pt-5 pd-8">
+            <View className="w-full flex-1 pt-5 pd-8">
               <Text className="text-gray-100 text-lg font-pregular mb-3">
                 Trending Videos
               </Text>
 
-              <Trending post={[{id:1},{id:2},{id:3}] ?? []}/>
-            </View> */}
+              <Trending posts={latestPosts ?? []}/>
+            </View>
           </View>
         )}
 
