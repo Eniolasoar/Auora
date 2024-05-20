@@ -12,8 +12,7 @@ export const videos = [
     },
     {avatar:"https://th.bing.com/th/id/OIP.audMX4ZGbvT2_GJTx2c4GgHaHw?w=191&h=200&c=7&r=0&o=5&dpr=1.1&pid=1.7",
       title: "How AI Shapes Coding Future",
-      thumbnail:
-        "https://cloud.appwrite.io/v1/storage/buckets/660d0e59e293896f1eaf/files/660f0294e36d80abfaa9/preview?width=2000&height=2000&gravity=top&quality=100&project=660d0e00da0472f3ad52",
+      thumbnail:"https://th.bing.com/th/id/OIP.cYJBzkdiLCfjm7mU6UhZpAHaEc?w=312&h=187&c=7&r=0&o=5&dpr=1.1&pid=1.7",
       video:
         "https://cloud.appwrite.io/v1/storage/buckets/660d0e59e293896f1eaf/files/660f032718759c0250ae/view?project=660d0e00da0472f3ad52",
       prompt: "Picture the future of coding with AI. Show AR VR",
@@ -22,7 +21,7 @@ export const videos = [
     {avatar:"https://th.bing.com/th/id/OIP.Vzu9LsVapjfVOcPQ0YolxgHaHa?w=208&h=208&c=7&r=0&o=5&dpr=1.1&pid=1.7",
       title: "Dalmatian's journey through Italy",
       thumbnail:
-        "https://cloud.appwrite.io/v1/storage/buckets/660d0e59e293896f1eaf/files/660f08374f22dab6ed8a/preview?width=2000&height=2000&gravity=top&quality=100&project=660d0e00da0472f3ad52",
+        "https://th.bing.com/th/id/OIP.ajNKQm6c_6qMbkWSm4hSiAHaFx?w=224&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7",
       video:
         "https://cloud.appwrite.io/v1/storage/buckets/660d0e59e293896f1eaf/files/660f093a03c20c7b2d12/view?project=660d0e00da0472f3ad52",
       prompt:
@@ -32,7 +31,7 @@ export const videos = [
     {avatar:"https://th.bing.com/th/id/OIP.audMX4ZGbvT2_GJTx2c4GgHaHw?w=176&h=183&c=7&r=0&o=5&dpr=1.1&pid=1.7",
       title: "Meet small AI friends",
       thumbnail:
-        "https://cloud.appwrite.io/v1/storage/buckets/660d0e59e293896f1eaf/files/660f0aef261367cdc1f5/preview?width=2000&height=2000&gravity=top&quality=100&project=660d0e00da0472f3ad52",
+        "https://th.bing.com/th/id/OIP.0KypzkQN146Wd-OoW43lrgHaE7?w=259&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7",
       video:
         "https://cloud.appwrite.io/v1/storage/buckets/660d0e59e293896f1eaf/files/660f0b7855304dd4f802/view?project=660d0e00da0472f3ad52",
       prompt:
@@ -42,7 +41,7 @@ export const videos = [
     {avatar:"https://th.bing.com/th/id/OIP.hC6OpIcdstV531Pg7XnT7QHaHa?w=211&h=211&c=7&r=0&o=5&dpr=1.1&pid=1.7",
       title: "Find inspiration in Every Line",
       thumbnail:
-        "https://cloud.appwrite.io/v1/storage/buckets/660d0e59e293896f1eaf/files/660fd243473318c9dde1/preview?width=2000&height=2000&gravity=top&quality=100&project=660d0e00da0472f3ad52",
+        "https://th.bing.com/th/id/OIP.upUp22bIlCItVK9nUqfznQHaEK?w=328&h=184&c=7&r=0&o=5&dpr=1.1&pid=1.7",
       video:
         "https://cloud.appwrite.io/v1/storage/buckets/660d0e59e293896f1eaf/files/660fd2cec9eb0298c9ac/view?project=660d0e00da0472f3ad52",
       prompt:
@@ -52,7 +51,7 @@ export const videos = [
     {avatar:"https://th.bing.com/th/id/OIP.Sw0g2adwtwCJAbIAveYGbgHaHa?w=211&h=211&c=7&r=0&o=5&dpr=1.1&pid=1.7",
       title: "Japan's Blossoming temple",
       thumbnail:
-        "https://cloud.appwrite.io/v1/storage/buckets/660d0e59e293896f1eaf/files/660fd5105ae00135f9f1/preview?width=2000&height=2000&gravity=top&quality=100&project=660d0e00da0472f3ad52",
+        "https://th.bing.com/th/id/OIP.ud9qsBjVKTyyud5lgV_fRgHaE8?w=298&h=199&c=7&r=0&o=5&dpr=1.1&pid=1.7",
       video:
         "https://cloud.appwrite.io/v1/storage/buckets/660d0e59e293896f1eaf/files/660fd543cc4792ba0611/view?project=660d0e00da0472f3ad52",
       prompt: "Create a captivating video journey through Japan's Sakura Temple",
@@ -60,8 +59,7 @@ export const videos = [
     },
     {avatar:"https://th.bing.com/th/id/OIP.hC6OpIcdstV531Pg7XnT7QHaHa?w=211&h=211&c=7&r=0&o=5&dpr=1.1&pid=1.7",
       title: "A Glimpse into Tomorrow's VR World",
-      thumbnail:
-        "https://cloud.appwrite.io/v1/storage/buckets/660d0e59e293896f1eaf/files/660fd68ced2adc48ace2/preview?width=2000&height=2000&gravity=top&quality=100&project=660d0e00da0472f3ad52",
+      thumbnail:"https://th.bing.com/th/id/OIP.JABstJwzG-qUdxLI6k5wFAHaE7?w=239&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7",
       video:
         "https://cloud.appwrite.io/v1/storage/buckets/660d0e59e293896f1eaf/files/660fd6b103374105e099/view?project=660d0e00da0472f3ad52",
       prompt: "An imaginative video envisioning the future of Virtual Reality",
@@ -70,7 +68,7 @@ export const videos = [
     {avatar:"https://th.bing.com/th/id/OIP.hC6OpIcdstV531Pg7XnT7QHaHa?w=211&h=211&c=7&r=0&o=5&dpr=1.1&pid=1.7",
       title: "A World where Ideas Grow Big",
       thumbnail:
-        "https://cloud.appwrite.io/v1/storage/buckets/660d0e59e293896f1eaf/files/660fd7cb71f83e85ec89/preview?width=2000&height=2000&gravity=top&quality=100&project=660d0e00da0472f3ad52",
+        "https://blog.lucidea.com/hs-fs/hubfs/blog_images/how-do-ideas-grow-hs.jpg?t=1533245715074&width=1688&height=845&name=how-do-ideas-grow-hs.jpg",
       video:
         "https://cloud.appwrite.io/v1/storage/buckets/660d0e59e293896f1eaf/files/660fd84ce8c5ff020f71/view?project=660d0e00da0472f3ad52",
       prompt:

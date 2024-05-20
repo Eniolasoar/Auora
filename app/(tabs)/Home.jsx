@@ -32,13 +32,10 @@ const Home = () => {
   //   fetchData();
   // }, []);
 
-  console.log(data);
 
 
 
   const { user, isLoggedin } = useGlobalContext();
-  console.log("User:", user);
-  console.log("Logged", isLoggedin);
 
   const [refreshing, setRefreshing] = useState(false);
   const onRefresh= async ()=>{

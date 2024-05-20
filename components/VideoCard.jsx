@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 const VideoCard = ({video:{title,thumbnail,video,avatar
 }}) => { 
-    console.log("Picture",thumbnail);
+   
      
     const [play, setPlay] = useState(false)
     
