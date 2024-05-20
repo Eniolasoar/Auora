@@ -1,4 +1,4 @@
-import { View, Text, FlatList, Image, RefreshControl, Alert } from "react-native";
+import { View, Text, FlatList, Image, RefreshControl, Alert,StatusBar } from "react-native";
 import React, { useEffect } from "react";
 import { useGlobalContext } from "../../context/GlobalProvider";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -12,6 +12,8 @@ import { videos } from "../../dummies/Videos";
 import VideoCard from "../../components/VideoCard";
 
 const Home = () => {
+
+  StatusBar.setBarStyle("light-content");
   const [data, setData] = useState(videos);
   const [isLoading, setIsLoading] = useState(true);
 

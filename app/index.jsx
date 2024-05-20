@@ -1,4 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from "react-native"
 import { ScrollView, Text, View ,Image} from 'react-native';
 import { Link,Redirect,router } from 'expo-router';
 import {SafeAreaView} from "react-native-safe-area-context";
@@ -9,6 +9,7 @@ export default function App() {
   const {isLoading,isLoggedin}=useGlobalContext();
 console.log("beginning:",isLoggedin)
   if(isLoggedin) return <Redirect href="/Home"/>
+  StatusBar.setBarStyle("light-content");
   return (
    
    <SafeAreaView className="bg-primary h-full">
@@ -29,7 +30,7 @@ console.log("beginning:",isLoggedin)
       </View>
     </ScrollView>
 
-    <StatusBar backgroundColor='red' style='dark'/>
+    
    </SafeAreaView>
   );
 }
