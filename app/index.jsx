@@ -14,7 +14,7 @@ console.log("beginning:",isLoggedin)
    
    <SafeAreaView className="bg-primary h-full">
     <ScrollView contentContainerStyle={{ height:"100%" }}>
-      <View className="w-full justify-center items-center min-h-[85vh] px-4 ">
+      <View className="w-full max-h-[100vh] justify-center items-center  px-4 ">
         <Image source={images.logo} resizeMode="contain" className="w-[130px] h-[84px]" />
         <Image source={images.cards} className="max-w--[380px] w-full h-[300px]" resizeMode="contain"/>
         <View className="relative mt-5">
