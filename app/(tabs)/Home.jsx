@@ -48,7 +48,6 @@ const Home = () => {
   }
 
 const latestPosts=[...data].sort((a,b)=>a.updateOrder - b.updateOrder);
-console.log(latestPosts);
   return (
     <SafeAreaView className="bg-primary h-full">
       <FlatList

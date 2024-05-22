@@ -1,10 +1,9 @@
 import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
-import { Image } from 'react-native';
+import { Image,ActivityIndicator } from 'react-native';
 import { icons } from '../constants';
 import { useState } from 'react';
 import { Video,ResizeMode 
-
 } from "expo-av";
 const VideoCard = ({video:{title,thumbnail,video,avatar
 }}) => { 
@@ -33,14 +32,38 @@ const VideoCard = ({video:{title,thumbnail,video,avatar
         </View>
 
         {play?(
-           <Video source={{ uri:video }}
-           className='w-full h-60 rounded-xl mt-3 bg-white/10' resizeMode={ResizeMode.CONTAIN} useNativeControls shouldPlay onPlaybackStatusUpdate={(status)=>{
-            console.log(item.video);
-            if(status.didJustFinish){
-              setPlay(false)
-            }
-           }}
-           />
+           <View>
+           {loading && (
+              <ActivityIndicator
+                size="large"
+                color="gray"
+                style={{
+                  position: "absolute",
+                  top: "50%",
+                  left: "50%",
+                  transform: [{ translateX: -20 }, { translateY: -20 }],
+                }}
+              />
+            )}
+            <Video
+              source={{ uri: item.video }}
+              className="w-52 h-72 rounded-[35px] mt-3 bg-white/10"
+              onLoadStart={() => {
+                setLoading(true);
+              }}
+              onLoad={() => {
+                setLoading(false);
+              }}
+              resizeMode={ResizeMode.CONTAIN}
+              useNativeControls
+              shouldPlay
+              onPlaybackStatusUpdate={(status) => {
+                if (status.didJustFinish) {
+                  setPlay(false);
+                }
+              }}
+            />
+          </View>
         ):
         <TouchableOpacity className="w-full h-60 rounded-xl mt-3 relative justify-center items-center" onPress={()=>setPlay(true)} activeOpacity={0.7}>
             <Image source={{ uri: thumbnail }} className='w-full h-full rounded-xl mt-3' resizeMode='cover'/>

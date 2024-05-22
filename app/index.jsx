@@ -5,11 +5,19 @@ import {SafeAreaView} from "react-native-safe-area-context";
 import { images } from '../constants';
 import CustomButton from '../components/CustomButton';
 import { useGlobalContext } from '../context/GlobalProvider';
+import { useEffect,useState } from "react";
 export default function App() {
   const {isLoading,isLoggedin}=useGlobalContext();
 console.log("beginning:",isLoggedin)
   if(isLoggedin) return <Redirect href="/Home"/>
   StatusBar.setBarStyle("light-content");
+
+  const [redirect, setRedirect] = useState(true);
+
+    if(redirect){
+
+      <Redirect href={"/Home"} />
+    }
   return (
    
    <SafeAreaView className="bg-primary h-full">

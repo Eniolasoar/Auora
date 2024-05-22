@@ -1,11 +1,16 @@
-import { View, Text, FlatList, ImageBackground, Image } from "react-native";
+import {
+  View,
+  Text,
+  FlatList,
+  ImageBackground,
+  Image,
+  ActivityIndicator,
+} from "react-native";
 import * as Animatable from "react-native-animatable";
 import { useState } from "react";
 import { TouchableOpacity } from "react-native";
 import { icons, images } from "../constants";
-import { Video,ResizeMode 
-
- } from "expo-av";
+import { Video, ResizeMode } from "expo-av";
 
 const zoomIn = {
   0: {
@@ -26,13 +31,7 @@ const zoomOut = {
 };
 const TrendingItem = ({ activeItem, item }) => {
   const [play, setPlay] = useState(false);
-  const extractVideoId = (url) => {
-    const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:.*v\/|.*?vi?=))([^&]+)/);
-    return match ? match[1] : null;
-  };
-
-  const youtubeEmbedUrl=item.video;
-  const videoId = extractVideoId(youtubeEmbedUrl);
+  const [loading, setLoading] = useState(true);
   return (
     <Animatable.View
       className="mr-5"
@@ -40,14 +39,38 @@ const TrendingItem = ({ activeItem, item }) => {
       duration={500}
     >
       {play ? (
-       <Video source={{ uri:item.video }}
-       className='w-52 h-72 rounded-[35px] mt-3 bg-white/10' resizeMode={ResizeMode.CONTAIN} useNativeControls shouldPlay onPlaybackStatusUpdate={(status)=>{
-        console.log(item.video);
-        if(status.didJustFinish){
-          setPlay(false)
-        }
-       }}
-       />
+        <View>
+         {loading && (
+            <ActivityIndicator
+              size="large"
+              color="gray"
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: [{ translateX: -20 }, { translateY: -20 }],
+              }}
+            />
+          )}
+          <Video
+            source={{ uri: item.video }}
+            className="w-52 h-72 rounded-[35px] mt-3 bg-white/10"
+            onLoadStart={() => {
+              setLoading(true);
+            }}
+            onLoad={() => {
+              setLoading(false);
+            }}
+            resizeMode={ResizeMode.CONTAIN}
+            useNativeControls
+            shouldPlay
+            onPlaybackStatusUpdate={(status) => {
+              if (status.didJustFinish) {
+                setPlay(false);
+              }
+            }}
+          />
+        </View>
       ) : (
         <TouchableOpacity
           className="relative justify-center items-center"
