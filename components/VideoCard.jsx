@@ -5,7 +5,7 @@ import { icons } from '../constants';
 import { useState } from 'react';
 import { Video,ResizeMode 
 } from "expo-av";
-const VideoCard = ({video:{title,thumbnail,video,avatar
+const VideoCard = ({video:{title,thumbnail,video,avatar,creator
 }}) => { 
    
      
@@ -22,7 +22,7 @@ const VideoCard = ({video:{title,thumbnail,video,avatar
 
                 <View className='justify-center flex-1 ml-3 gap-y-1'>
                     <Text className='text-white text-sm font-psemibold' numberOfLines={1}>{title}</Text>
-                    <Text className='text-xs text-gray-100 font-pregular'>EniDev</Text>
+                    <Text className='text-xs text-gray-100 font-pregular'>{creator}</Text>
                 </View>
             </View>
 

@@ -9,15 +9,17 @@ export const videos = [
       prompt:
         "Create a motivating AI driven video aimed at inspiring coding enthusiasts with simple language"
       ,updateOrder:"2",
-      id:1
+      id:1,
+      creator:"EniDev"
     },
-    {avatar:"https://th.bing.com/th/id/OIP.audMX4ZGbvT2_GJTx2c4GgHaHw?w=191&h=200&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    {avatar:"https://th.bing.com/th?id=OIP.fsi2T7e_LrHLwncEod4FWQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
       title: "How AI Shapes The Coding Future",
       thumbnail:"https://th.bing.com/th/id/OIP.cYJBzkdiLCfjm7mU6UhZpAHaEc?w=312&h=187&c=7&r=0&o=5&dpr=1.1&pid=1.7",
       video:"https://cloud.appwrite.io/v1/storage/buckets/663cbfce0022f418ce78/files/66471cb400389732207c/view?project=663cba65002ed8db2b6a&mode=admin",
       prompt: "Picture the future of coding with AI.",
       updateOrder:"4",
-      id:2
+      id:2,
+      creator:"EniDev"
     },
     {avatar:"https://th.bing.com/th/id/OIP.Vzu9LsVapjfVOcPQ0YolxgHaHa?w=208&h=208&c=7&r=0&o=5&dpr=1.1&pid=1.7",
       title: "Dalmatian's journey through Italy",
@@ -28,7 +30,8 @@ export const videos = [
       prompt:
         "Create a heartwarming video following the travels of dalmatian dog exploring beautiful Italy",
         updateOrder:"6",
-        id:3
+        id:3,
+        creator:"CreativeTravelers"
       },
     {avatar:"https://th.bing.com/th/id/OIP.audMX4ZGbvT2_GJTx2c4GgHaHw?w=176&h=183&c=7&r=0&o=5&dpr=1.1&pid=1.7",
       title: "Meet small AI friends",
@@ -39,9 +42,10 @@ export const videos = [
       prompt:
         "Make a video about a small blue AI robot blinking its eyes and looking at the screen",
         updateOrder:"1",
-      id:4
+      id:4,
+      creator:"SpotFinders"
       },
-    {avatar:"https://th.bing.com/th/id/OIP.hC6OpIcdstV531Pg7XnT7QHaHa?w=211&h=211&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    {avatar:"https://th.bing.com/th?id=OIP.fsi2T7e_LrHLwncEod4FWQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
       title: "Find inspiration in Every Line",
       thumbnail:
         "https://th.bing.com/th/id/OIP.upUp22bIlCItVK9nUqfznQHaEK?w=328&h=184&c=7&r=0&o=5&dpr=1.1&pid=1.7",
@@ -50,7 +54,8 @@ export const videos = [
       prompt:
         "A buy working on his laptop that sparks excitement for coding, emphasizing the endless possibilities and personal growth it offers",
         updateOrder:"3",
-      id:5
+      id:5,
+      creator:"EniDev"
       },
     {avatar:"https://th.bing.com/th/id/OIP.Sw0g2adwtwCJAbIAveYGbgHaHa?w=211&h=211&c=7&r=0&o=5&dpr=1.1&pid=1.7",
       title: "Japan's Blossoming temple",
@@ -59,7 +64,8 @@ export const videos = [
       video:"https://www.youtube.com/live/AEE5vALCqKc?si=av5zA5LB6mg5Ic0W",
       prompt: "Create a captivating video journey through Japan's Sakura Temple",
       updateOrder:"12",
-      id:6
+      id:6,
+      creator:"Soarers"
     },
     {avatar:"https://th.bing.com/th/id/OIP.hC6OpIcdstV531Pg7XnT7QHaHa?w=211&h=211&c=7&r=0&o=5&dpr=1.1&pid=1.7",
       title: "A Glimpse into Tomorrow's VR World",
@@ -68,9 +74,10 @@ export const videos = [
         "https://youtu.be/MIHR_8MDY70?si=N2dy_XTV4Teiddnn",
       prompt: "An imaginative video envisioning the future of Virtual Reality",
       updateOrder:"10",
-      id:7
+      id:7,
+      creator:"M.A.R.S"
     },
-    {avatar:"https://th.bing.com/th/id/OIP.hC6OpIcdstV531Pg7XnT7QHaHa?w=211&h=211&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    {avatar:"https://th.bing.com/th?id=OIP.fsi2T7e_LrHLwncEod4FWQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
       title: "A World where Ideas Grow Big",
       thumbnail:
         "https://blog.lucidea.com/hs-fs/hubfs/blog_images/how-do-ideas-grow-hs.jpg?t=1533245715074&width=1688&height=845&name=how-do-ideas-grow-hs.jpg",
@@ -79,6 +86,7 @@ export const videos = [
       prompt:
         "Make a fun video about hackers and all the cool stuff they do with computers",
         updateOrder:"5",
-      id:8
+      id:8,
+      creator:"EniDev"
       },
   ];
