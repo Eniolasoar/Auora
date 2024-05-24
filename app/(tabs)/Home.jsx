@@ -43,7 +43,7 @@ const Home = () => {
   const onRefresh= async ()=>{
     setRefreshing(true);
     console.log('I am refreshing');
-    Updates.reloadAsync();
+    // Updates.reloadAsync();
     setRefreshing(false)
   }
 

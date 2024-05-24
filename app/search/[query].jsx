@@ -39,9 +39,9 @@ const latestPosts=[...data].sort((a,b)=>a.updateOrder - b.updateOrder);
           <VideoCard video={item}/>
         )}
         ListHeaderComponent={() => (
-          <View className="my-6 px-4 ">
+          <View className="my-6 px-4 mt-11 ">
               <View>
-                <Text className="font-pmedium text-sm text-gray-100">
+                <Text className="font-pmedium text-sm text-gray-100 text-[17px]">
 Search Results                </Text>
                 <Text className="font-semimedium text-2xl text-white">
                   {query}

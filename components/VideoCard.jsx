@@ -9,7 +9,8 @@ const VideoCard = ({video:{title,thumbnail,video,avatar,creator
 }}) => { 
    
      
-    const [play, setPlay] = useState(false)
+    const [play, setPlay] = useState(false);
+    const [loading, setLoading] = useState(true);
     
   return (
     <View className='flex-col items-center px-4 mb-14'>
@@ -32,7 +33,7 @@ const VideoCard = ({video:{title,thumbnail,video,avatar,creator
         </View>
 
         {play?(
-           <View>
+           <View className='w-full '>
            {loading && (
               <ActivityIndicator
                 size="large"
@@ -46,8 +47,8 @@ const VideoCard = ({video:{title,thumbnail,video,avatar,creator
               />
             )}
             <Video
-              source={{ uri: item.video }}
-              className="w-52 h-72 rounded-[35px] mt-3 bg-white/10"
+              source={{ uri: video }}
+              className="w-92 h-72 rounded-[35px] mt-3 bg-white/10 "
               onLoadStart={() => {
                 setLoading(true);
               }}
