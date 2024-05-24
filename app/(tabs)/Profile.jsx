@@ -1,5 +1,5 @@
 
-import { useLocalSearchParams } from 'expo-router'
+import { router, useLocalSearchParams } from 'expo-router'
 import { View, Text, FlatList,SafeAreaView ,StatusBar,TouchableOpacity,Image} from "react-native";
 import React, { useEffect } from "react";
 import { useGlobalContext } from "../../context/GlobalProvider";
@@ -33,7 +33,9 @@ return filteredVideos;
   const { user, isLoggedin } = useGlobalContext();
 
   const logout=()=>{
-    
+    // setUser(null);
+    // setIsLoggedin(false);
+    router.replace("SignIn");
   }
 const latestPosts=[...data].sort((a,b)=>a.updateOrder - b.updateOrder);
   return (
@@ -48,7 +50,7 @@ const latestPosts=[...data].sort((a,b)=>a.updateOrder - b.updateOrder);
         ListHeaderComponent={() => (
           <View className='w-full justify-center items-center mt-6 mb-12 px-4'>
             <TouchableOpacity className='w-full items-end mb-10' onPress={logout}>
-              <Image source={icons.logout} resizeMode="contain" className='w-6 h-6'/> 
+              <Image source={icons.logout} resizeMode="contain" className='w-6 h-6' onPress={logout}/> 
             </TouchableOpacity>
 
             <View className='w-16 h-16 border border-secondary rounded-lg justify-center items-center'>
