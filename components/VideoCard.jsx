@@ -42,7 +42,7 @@ const VideoCard = ({video:{title,thumbnail,video,avatar,creator
                   position: "absolute",
                   top: "50%",
                   left: "50%",
-                  transform: [{ translateX: -20 }, { translateY: -20 }],
+                  transform: [{ translateX: -35 }, { translateY: -35 }],
                 }}
               />
             )}
