@@ -46,8 +46,9 @@ else{
   setTimeout(()=>{
     Alert.alert("Document Picked",JSON.stringify(result,null,2))
   },100)
-}
-  const submit = ()=>{
+}}
+
+const submit = ()=>{
 if(!form.prompt|| !form.title || !form.video || !form.thumbnail){
   return Alert.alert("Error","Please fill in all the fields")
 }
@@ -61,10 +62,10 @@ Alert.alert("Error",error.message)
 }finally{
   setForm({title:"",video:null,thumbnail:null,prompt:""})
 }
-  }}
+  }
   return (
     <SafeAreaView className="bg-primary h-full">
-      <ScrollView className="px-4 my-6">
+      <ScrollView className="px-4 my-6 mt-10">
         <Text className="text-2xl text-white">Upload Video</Text>
 
         <FormField
