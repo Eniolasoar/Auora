@@ -21,9 +21,9 @@ const SignIn = () => {
   const {setUser,setIsLoggedin,isLoggedin}=useGlobalContext();
   
   const submit=async ()=>{
-    // if(!form.email||!form.password){
-    //   Alert.alert("Error","Please fill in all the fields");
-    // }
+    if(!form.email||!form.password){
+      Alert.alert("Error","Please fill in all the fields");
+    }
     setIsSubmitting(true);
     try {
       // await signIn(form.email,form.password);

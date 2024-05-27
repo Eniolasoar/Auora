@@ -43,9 +43,7 @@ if(!result.canceled){
 
   
 else{
-  setTimeout(()=>{
-    Alert.alert("Document Picked",JSON.stringify(result,null,2))
-  },100)
+Alert.alert("Error","You didn't pick any image")
 }}
 
 const submit = ()=>{
@@ -129,7 +127,7 @@ Alert.alert("Error",error.message)
         <FormField
           title=" AI Prompt"
           value={form.prompt}
-          placeholder="The prompt you used to create this video"
+          placeholder="The prompt used to create this video"
           handleChangeText={(e) => setForm({ ...form, prompt: e })}
           otherStyles="mt-7"
         />
